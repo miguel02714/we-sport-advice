@@ -981,19 +981,27 @@
         padding: 60px 20px;
         background-position: center;
         background-size: cover;
-    }
-                    .faq {
-                        padding: 1rem;
-                    }
-                
-                    .faq label {
-                        font-size: 18px;
-                        padding: 0.8rem;
-                    }
-                
-                    .faq .resposta p {
-                        font-size: 16px;
-                    }
+    }/* Perguntas frequentes */
+    /* Perguntas frequentes */
+.faq {
+    padding: 1rem;
+    font-size: 11px; /* Mantém o tamanho base da caixa */
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1px;
+}
+
+.faq label {
+    font-size: 190px; /* Diminui só o tamanho do texto da pergunta */
+    ;
+}
+
+.faq .resposta p {
+    font-size: 16px; /* Mantém o texto da resposta legível */
+    line-height: 1.6;
+
+} 
                 
                     /* Contato */
                     .contato {
@@ -1172,7 +1180,7 @@
             Clique e descubra como podemos levar sua performance ao próximo nível.
         </p>
         <div class="wrap">
-            <button class="button" data-i18n="SABER MAIS">SABER MAIS</button>
+            <button href="http://wa.me/55852098240048" class="button" data-i18n="SABER MAIS">SABER MAIS</button>
         </div>
     </div>
 
@@ -1193,9 +1201,16 @@
     <div class="perguntas-frequentes">
         <h1 data-i18n="Perguntas frequentes">Perguntas frequentes</h1>
         <ul class="faq">
+      
           <li>
             <input type="radio" name="acordeon" id="primeiro">
-            <label for="primeiro"><span>1</span> <span data-i18n="O que é a WE SPORT ADVICE?">O que é a WE SPORT ADVICE?</span></label>
+            <label for="primeiro"><span>1</span>
+              <span class="faq-mobile-text"
+                    data-i18n="O que é a WE SPORT ADVICE?"
+                    data-mobile="O que é a WE SPORT?">
+                O que é a WE SPORT ADVICE?
+              </span>
+            </label>
             <div class="resposta">
               <p data-i18n="É uma empresa internacional de assessoria esportiva especializada em atletas de alto rendimento. Atuamos de forma estratégica para potencializar a carreira de nossos clientes com um atendimento individualizado e próximo.">
                 É uma empresa internacional de assessoria esportiva especializada em atletas de alto rendimento. Atuamos de forma estratégica para potencializar a carreira de nossos clientes com um atendimento individualizado e próximo.
@@ -1205,7 +1220,13 @@
       
           <li>
             <input type="radio" name="acordeon" id="segundo">
-            <label for="segundo"><span>2</span> <span data-i18n="Quais serviços vocês oferecem?">Quais serviços vocês oferecem?</span></label>
+            <label for="segundo"><span>2</span>
+              <span class="faq-mobile-text"
+                    data-i18n="Quais serviços vocês oferecem?"
+                    data-mobile="Quais serviços vocês oferecem?">
+                Quais serviços vocês oferecem?
+              </span>
+            </label>
             <div class="resposta">
               <p data-i18n="Oferecemos suporte completo: planejamento de carreira, transição internacional, gestão de imagem, apoio psicológico e conexão com clubes e patrocinadores.">
                 Oferecemos suporte completo: planejamento de carreira, transição internacional, gestão de imagem, apoio psicológico e conexão com clubes e patrocinadores.
@@ -1215,7 +1236,13 @@
       
           <li>
             <input type="radio" name="acordeon" id="terceiro">
-            <label for="terceiro"><span>3</span> <span data-i18n="A assessoria é voltada apenas para atletas profissionais?">A assessoria é voltada apenas para atletas profissionais?</span></label>
+            <label for="terceiro"><span>3</span>
+              <span class="faq-mobile-text"
+                    data-i18n="A assessoria é voltada apenas para atletas profissionais?"
+                    data-mobile="Só atende atletas profissionais?">
+                A assessoria é voltada apenas para atletas profissionais?
+              </span>
+            </label>
             <div class="resposta">
               <p data-i18n="Não. Trabalhamos com atletas de diferentes níveis, desde categorias de base até o alto rendimento, além de treinadores e outros profissionais do esporte.">
                 Não. Trabalhamos com atletas de diferentes níveis, desde categorias de base até o alto rendimento, além de treinadores e outros profissionais do esporte.
@@ -1225,7 +1252,13 @@
       
           <li>
             <input type="radio" name="acordeon" id="quarto">
-            <label for="quarto"><span>4</span> <span data-i18n="A WE SPORT ADVICE tem atuação internacional?">A WE SPORT ADVICE tem atuação internacional?</span></label>
+            <label for="quarto"><span>4</span>
+              <span class="faq-mobile-text"
+                    data-i18n="A WE SPORT ADVICE tem atuação internacional?"
+                    data-mobile="Atendem fora do país?">
+                A WE SPORT ADVICE tem atuação internacional?
+              </span>
+            </label>
             <div class="resposta">
               <p data-i18n="Sim. Nossa sede é em Londres, mas atuamos globalmente por meio de uma rede de parceiros e oportunidades em diversos países, conectando talentos com clubes e projetos esportivos no exterior.">
                 Sim. Nossa sede é em Londres, mas atuamos globalmente por meio de uma rede de parceiros e oportunidades em diversos países, conectando talentos com clubes e projetos esportivos no exterior.
@@ -1235,7 +1268,13 @@
       
           <li>
             <input type="radio" name="acordeon" id="quinto">
-            <label for="quinto"><span>5</span> <span data-i18n="Como posso contratar os serviços da assessoria?">Como posso contratar os serviços da assessoria?</span></label>
+            <label for="quinto"><span>5</span>
+              <span class="faq-mobile-text"
+                    data-i18n="Como posso contratar os serviços da assessoria?"
+                    data-mobile="Como contratar?">
+                Como posso contratar os serviços da assessoria?
+              </span>
+            </label>
             <div class="resposta">
               <p data-i18n="Basta entrar em contato pelo nosso site ou redes sociais. Faremos uma reunião inicial gratuita para entender seu perfil e objetivos antes de propor um plano personalizado.">
                 Basta entrar em contato pelo nosso site ou redes sociais. Faremos uma reunião inicial gratuita para entender seu perfil e objetivos antes de propor um plano personalizado.
@@ -1245,23 +1284,175 @@
       
           <li>
             <input type="radio" name="acordeon" id="sexto">
-            <label for="sexto"><span>6</span> <span data-i18n="Quais os diferenciais da WE SPORT ADVICE?">Quais os diferenciais da WE SPORT ADVICE?</span></label>
+            <label for="sexto"><span>6</span>
+              <span class="faq-mobile-text"
+                    data-i18n="Quais os diferenciais da WE SPORT ADVICE?"
+                    data-mobile="Quais os diferenciais?">
+                Quais os diferenciais da WE SPORT ADVICE?
+              </span>
+            </label>
             <div class="resposta">
               <p data-i18n="Unimos experiência internacional, atendimento personalizado e uma abordagem 360º que cuida do atleta dentro e fora do campo, com foco no sucesso a longo prazo.">
                 Unimos experiência internacional, atendimento personalizado e uma abordagem 360º que cuida do atleta dentro e fora do campo, com foco no sucesso a longo prazo.
               </p>
             </div>
           </li>
+      
         </ul>
       </div>
+      <script>
+
+        function applyTranslations(lang) {
+            const elements = document.querySelectorAll("[data-i18n]");
+            const elementsHTML = document.querySelectorAll("[data-i18n-html]");
+        
+            // Traduz elementos com texto direto
+            elements.forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                const translation = translations[lang][key];
+                if (translation) {
+                    el.textContent = translation;
+                }
+            });
+        
+            // Traduz elementos com HTML (ex: quebras de linha)
+            elementsHTML.forEach(el => {
+                const key = el.getAttribute("data-i18n-html");
+                const translation = translations[lang][key];
+                if (translation) {
+                    el.innerHTML = translation;
+                }
+            });
+        
+            // Se desejar aplicar também aos atributos tipo placeholder ou title:
+            const placeholders = document.querySelectorAll("[data-i18n-placeholder]");
+            placeholders.forEach(el => {
+                const key = el.getAttribute("data-i18n-placeholder");
+                const translation = translations[lang][key];
+                if (translation) {
+                    el.setAttribute("placeholder", translation);
+                }
+            });
+        
+            // FAQ: Perguntas/respostas extras
+            const faqItems = document.querySelectorAll(".faq label span"); 
+            faqItems.forEach(el => {
+                const originalText = el.textContent.trim();
+                const translation = translations[lang][originalText];
+                if (translation) {
+                    el.textContent = translation;
+                }
+            });
+        
+            const faqAnswers = document.querySelectorAll(".faq .resposta p");
+            faqAnswers.forEach(el => {
+                const originalText = el.textContent.trim();
+                const translation = translations[lang][originalText];
+                if (translation) {
+                    el.textContent = translation;
+                }
+            });
+        }
+        
+      </script>
       
-    </div>
 
     <footer style="background-color: #111; color: white; padding: 30px 20px; text-align: center;">
         <div style="max-width: 1000px; margin: auto;">
             <p style="font-size: 14px; color: #aaa;" data-i18n="© 2025 WE SPORT ADVICE — Todos os direitos reservados.">© 2025 WE SPORT ADVICE — Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script>
+        function applyTranslations(lang) {
+            const elements = document.querySelectorAll("[data-i18n]");
+            const elementsHTML = document.querySelectorAll("[data-i18n-html]");
+        
+            // Traduz elementos com texto direto
+            elements.forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                const translation = translations[lang][key];
+                if (translation) {
+                    el.textContent = translation;
+                }
+            });
+        
+            // Traduz elementos com HTML (ex: quebras de linha)
+            elementsHTML.forEach(el => {
+                const key = el.getAttribute("data-i18n-html");
+                const translation = translations[lang][key];
+                if (translation) {
+                    el.innerHTML = translation;
+                }
+            });
+        
+            // Se desejar aplicar também aos atributos tipo placeholder ou title:
+            const placeholders = document.querySelectorAll("[data-i18n-placeholder]");
+            placeholders.forEach(el => {
+                const key = el.getAttribute("data-i18n-placeholder");
+                const translation = translations[lang][key];
+                if (translation) {
+                    el.setAttribute("placeholder", translation);
+                }
+            });
+        
+            // FAQ: Perguntas/respostas extras (se não estiverem com data-i18n)
+            const faqItems = document.querySelectorAll(".faq-item"); // ou o seletor certo
+            faqItems.forEach(el => {
+                const originalText = el.textContent.trim();
+                const translation = translations[lang][originalText];
+                if (translation) {
+                    el.textContent = translation;
+                }
+            });
+        }
+    </script>
+    <script>
+    function trocarTextoFaqMobile() {
+        if (window.innerWidth <= 769) {
+          document.querySelectorAll('.faq-mobile-text').forEach(el => {
+            const mobileText = el.getAttribute('data-mobile');
+            if (mobileText) {
+              el.textContent = mobileText;
+            }
+          });
+        }
+      }
+      
+      // Executa a função ao carregar a página e ao redimensionar a janela
+      window.addEventListener('load', () => {
+        trocarTextoFaqMobile();
+        // Aqui você pode garantir que, se já tiver trocado o idioma, o texto seja ajustado
+        changeLanguage(document.documentElement.lang);  // Função que troca o idioma
+      });
+      window.addEventListener('resize', trocarTextoFaqMobile);
+      
+      // Função de troca de idioma
+      function changeLanguage(lang) {
+        const elements = document.querySelectorAll('[data-i18n], [data-i18n-html]');
+        
+        // Detecta se o dispositivo é mobile
+        const isMobile = window.innerWidth <= 769; // Ajuste o valor conforme necessário para o seu layout
+      
+        elements.forEach(el => {
+          const key = el.getAttribute('data-i18n') || el.getAttribute('data-i18n-html');
+          let translation = translations[lang]?.[key];
+          
+          // Troca o texto das perguntas para dispositivos móveis
+          if (key && key.includes('Pergunta') && isMobile) {
+            translation = translations[lang][key.replace('desktop', 'mobile')];
+          }
+          
+          if (translation) {
+            if (el.hasAttribute('data-i18n-html')) {
+              el.innerHTML = translation;
+            } else {
+              el.textContent = translation;
+            }
+          }
+        });
+      }
+    </script>
+      
     <script>
         window.addEventListener('scroll', function () {
             const button = document.querySelector('.glow-on-hover');
@@ -1279,7 +1470,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       </script>
-    <script>
+      <script>
         const translations = {
             "pt": {
                 "IMPRENSA": "IMPRENSA",
@@ -1294,8 +1485,7 @@
                 "WhatsApp": "WhatsApp",
                 "Instagram": "Instagram",
                 "Perguntas frequentes": "Perguntas frequentes",
-                "© 2025 WE SPORT ADVICE — Todos os direitos reservados.": "© 2025 WE SPORT ADVICE — Todos os direitos reservados.",
-                "A We Sport Advice é uma empresa sediada em Londres que oferece assessoria estratégica e personalizada para atletas de alto rendimento.Com atuação global, nosso objetivo é impulsionar carreiras esportivas com um acompanhamento próximo, eficaz e adaptado às exigências do esporte de elite.Valorizamos a confiança e a proximidade, construindo relações duradouras e contribuindo para o crescimento dentro e fora do campo.": "A We Sport Advice é uma empresa sediada em Londres que oferece assessoria estratégica e personalizada para atletas de alto rendimento.Com atuação global, nosso objetivo é impulsionar carreiras esportivas com um acompanhamento próximo, eficaz e adaptado às exigências do esporte de elite.Valorizamos a confiança e a proximidade, construindo relações duradouras e contribuindo para o crescimento dentro e fora do campo."
+                "© 2025 WE SPORT ADVICE — Todos os direitos reservados.": "© 2025 WE SPORT ADVICE — Todos os direitos reservados."
             },
             "en": {
                 "IMPRENSA": "PRESS",
@@ -1310,17 +1500,18 @@
                 "WhatsApp": "WhatsApp",
                 "Instagram": "Instagram",
                 "Perguntas frequentes": "Frequently Asked Questions",
-                "© 2025 WE SPORT ADVICE — Todos os direitos reservados.": "© 2025 WE SPORT ADVICE — All rights reserved.",
-                "A We Sport Advice é uma empresa sediada em Londres que oferece assessoria estratégica e personalizada para atletas de alto rendimento.Com atuação global, nosso objetivo é impulsionar carreiras esportivas com um acompanhamento próximo, eficaz e adaptado às exigências do esporte de elite.Valorizamos a confiança e a proximidade, construindo relações duradouras e contribuindo para o crescimento dentro e fora do campo.": "We Sport Advice is a company based in London that offers strategic and personalized consultancy for high-performance athletes. With a global presence, our goal is to boost sports careers with close, effective, and tailored support that meets the demands of elite sports. We value trust and proximity, building lasting relationships and contributing to growth both on and off the field."
+                "© 2025 WE SPORT ADVICE — Todos os direitos reservados.": "© 2025 WE SPORT ADVICE — All rights reserved."
             }
         };
         
-
+        // Função para trocar idioma
         function changeLanguage(lang) {
+            console.log('Mudando idioma para:', lang); // Verifique o idioma
             const elements = document.querySelectorAll('[data-i18n], [data-i18n-html]');
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n') || el.getAttribute('data-i18n-html');
                 const translation = translations[lang]?.[key];
+                console.log('Chave:', key, 'Tradução:', translation); // Verifique se a chave e tradução estão corretas
                 if (translation) {
                     if (el.hasAttribute('data-i18n-html')) {
                         el.innerHTML = translation;
@@ -1330,24 +1521,26 @@
                 }
             });
         }
-
+        
+        // Configura os eventos dos botões de idioma
         document.querySelectorAll('.language-option').forEach(button => {
             button.addEventListener('click', function () {
                 const lang = this.getAttribute('data-lang');
-                changeLanguage(lang);
-                document.documentElement.lang = lang;
+                changeLanguage(lang); // Troca de idioma
+                document.documentElement.lang = lang; // Atualiza o atributo lang do HTML
                 document.querySelector("#flag-icon").src = lang === "en"
                     ? "https://flagcdn.com/w40/us.png"
-                    : "https://flagcdn.com/w40/br.png";
-                document.getElementById("language-menu").style.display = "none";
+                    : "https://flagcdn.com/w40/br.png"; // Troca a bandeira
+                document.getElementById("language-menu").style.display = "none"; // Fecha o menu
             });
         });
-
+        
+        // Exibe ou esconde o menu de idiomas
         document.querySelector("#language-toggle").addEventListener('click', function () {
             const menu = document.getElementById("language-menu");
             menu.style.display = menu.style.display === "block" ? "none" : "block";
         });
-    </script>
+</script>    
     <script>
         const navbar = document.querySelector('.nav');
       
